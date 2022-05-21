@@ -1,0 +1,40 @@
+<h1 style="font-family: Merriweather">Welcome to my FutureCoin crypto website</h1>
+<br/>
+
+<h2 style="font-family: Merriweather"><strong>3 Best Cryptocurrencies For Beginner Investors</h2>
+<h4>Before cryptocurrency investing, it is essential to know the types. There are many different types of cryptocurrency systems that you can invest in. Bitcoin is arguably the grandfather of all crypto. It has been around for over 10 years and it’s the largest cryptocurrency system in the world, with a market capitalization of about $128 billion. Here are some of the other cryptocurrency you can buy: <br/>
+<br/>
+Bitcoin: Bitcoin is a great starting place for any beginner. Every currency exchange supports Bitcoin, which means that you’ll know what you’re buying into. Bitcoin is merely a form of digital cash. You can use it as a means to exchange currency and value, which gives it a competitive advantage.
+Ether: It’s a cryptocurrency, but the main focus is on purchasing applications without having to pay a middleman (in other words, bypassing the Apple Store).
+Cardano: This cryptocurrency is primarily used to store private data. An alternative to Ehterium, it’s more energy-efficient and is thus less expensive</h4>
+
+<br/>
+<h1 style="font-family: Merriweather">My 5 Favorite Coins:</h1>
+<% @coins %>
+<% for x in @coins['data'] %>
+ <% for coin in @my_coins %>
+     <% if coin == x['symbol'] %> <br/><br/>
+         <%= x['name'] %>: <%= x['quote']['USD']['price'] %>
+     <% end %>
+ <% end %>
+<% end %>
+
+<br/><br/><br/>
+<h3><strong style="font-family: Merriweather">Here you can check the lastest English/Arabic News about all cryptocurrencies!</h3>
+<br/>
+<h1 style="color:gray">Live Update in English</h1><br/>
+<iframe width="1100" height="650" style="border:3px solid black" src="https://news.bitcoin.com/" frameborder="0" allowFullScreen="true"></iframe>
+<br/><br/><br/>
+<iframe width="1100" height="650" style="border:3px solid black" src="https://www.coindesk.com/" frameborder="0" allowFullScreen="true"></iframe>
+<br/><br/><br/>
+<h1 style="color:gray">Live Update in Arabic</h1><br/>
+<iframe width="1100" height="650" style="border:3px solid black" src="https://www.asharqbusiness.com/cryptocurrencies" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+
+
+
